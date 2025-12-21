@@ -37,7 +37,7 @@ From the 2019 dashboard view:
 > Numbers can change depending on filters (Year/Month) and the dataset version.
 
 ## Dashboard Preview
-Add screenshots here (recommended):
+
 <img width="1644" height="837" alt="image" src="https://github.com/user-attachments/assets/97d49b50-ab58-42aa-9de5-dce25cc2263b" />
 
 
