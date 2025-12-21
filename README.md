@@ -3,7 +3,6 @@ Welcome to my Data Analyst Portfolio. I’m a data analyst who helps teams make 
 This is a repository to showcase skills, share projects and track my progress in Data Analytics / Data Science related topics.
 ## Table of Contents
 
-- [About](#about)
 - [Portfolio Projects](#portfolio-projects)
   - [Python](#python)
     - [Analyzing the Factors Contributing to the Success of a Movie](#analyzing-the-factors-contributing-to-the-success-of-a-movie)
@@ -11,8 +10,6 @@ This is a repository to showcase skills, share projects and track my progress in
   - [SQL](#sql)
     - [Covid 19 Data Exploration](#covid-19-data-exploration)
     - [Nashville Housing Data Cleaning](#nashville-housing-data-cleaning)
-  - [R](#r)
-    - [Legendary Pokémon Analysis (Study Project)](#legendary-pokémon-analysis-study-project)
   - [Excel / Google Sheets](#excel--google-sheets)
   - [Tableau](#tableau)
   - [Power BI](#power-bi)
