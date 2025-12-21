@@ -38,8 +38,9 @@ From the 2019 dashboard view:
 
 ## Dashboard Preview
 Add screenshots here (recommended):
-- `images/dashboard.png`
-- `images/mysql_checks.png`
+<img width="1644" height="837" alt="image" src="https://github.com/user-attachments/assets/97d49b50-ab58-42aa-9de5-dce25cc2263b" />
+
+
 
 ## Repository Files
 - `Sales_Project.pbix` → Power BI dashboard file
@@ -52,8 +53,4 @@ Add screenshots here (recommended):
 2. Server → Data Import
 3. Select `db_dump.sql` and import into your local MySQL server
 
-(Optional validation check used in this project)
-```sql
-SELECT *
-FROM sales.transactions
-WHERE sales_amount <= 0;
+
