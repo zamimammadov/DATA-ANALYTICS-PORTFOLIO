@@ -13,3 +13,4 @@ This is a repository to showcase skills, share projects and track my progress in
 - [Excel / Google Sheets](#excel--google-sheets)
 - [Tableau](#tableau)
 - [Power BI](#power-bi)
+- [Capstones](#Capstones)
