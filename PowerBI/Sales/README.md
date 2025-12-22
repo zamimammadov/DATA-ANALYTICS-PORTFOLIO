@@ -46,11 +46,5 @@ From the 2019 dashboard view:
 - `Sales_Project.pbix` → Power BI dashboard file
 - `db_dump.sql` → MySQL database dump (tables + data)
 
-## How to Run (Quick Start)
-
-### 1) Restore MySQL database
-1. Open **MySQL Workbench**
-2. Server → Data Import
-3. Select `db_dump.sql` and import into your local MySQL server
 
 
