@@ -12,6 +12,6 @@ This is a repository to showcase skills, share projects and track my progress in
   - [Nashville Housing Data Cleaning](#nashville-housing-data-cleaning)
 - [Excel / Google Sheets](#excel--google-sheets)
 - [Tableau](#tableau)
-- [Power BI](#power-bi)
-  - [Hr Anlaysis](#https://github.com/zamimammadov/DATA-ANALYTICS-POTFOLIO/tree/main/PowerBI/HR%20Analytics)
+- [Power BI](./PowerBI)
+  - [HR Analytics](./PowerBI/HR%20Analytics)
 - [Capstones](#Capstones)
