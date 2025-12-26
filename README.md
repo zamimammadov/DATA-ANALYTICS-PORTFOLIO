@@ -13,4 +13,5 @@ This is a repository to showcase skills, share projects and track my progress in
 - [Excel / Google Sheets](#excel--google-sheets)
 - [Tableau](#tableau)
 - [Power BI](#power-bi)
+  - [Hr Anlaysis](#https://github.com/zamimammadov/DATA-ANALYTICS-POTFOLIO/tree/main/PowerBI/HR%20Analytics)
 - [Capstones](#Capstones)
