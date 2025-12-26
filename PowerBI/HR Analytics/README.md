@@ -74,6 +74,14 @@ This dashboard provides a single, standardized view of attendance performance an
 
 ---
 
+**Preview of Dashboard**
+<img width="1146" height="762" alt="image" src="https://github.com/user-attachments/assets/d7e80a63-a5b4-4fda-897a-2318fc469786" />
+
+
+
+---
+
+
 # Next Steps
 1. Add a **Date table** and time intelligence (Month-over-Month, rolling averages, YTD).
 2. Add **department/team** fields (if available) for deeper analysis.
