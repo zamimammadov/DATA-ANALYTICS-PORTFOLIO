@@ -1,111 +1,81 @@
-Title
+# Title
+**Presence Insights Dashboard (Power BI)**  
+Attendance analytics to track **Presence %**, **WFH %**, and **Sick Leave (SL) %** from an Excel source.
 
-Presence Insights Dashboard (Power BI)
-Tracking Presence %, WFH %, and Sick Leave (SL) % from an Excel attendance file.
+---
 
-Executive Summary
+# Executive Summary
+This project converts an Excel-based attendance tracker into an interactive Power BI dashboard.  
+Using **Power Query** for data cleaning/combining and **DAX** for KPI calculations, the report provides a clear view of overall attendance performance and patterns by **date**, **day of week**, and **employee**. The dashboard helps stakeholders quickly monitor trends (Presence/WFH/SL) and identify outliers that may require attention.
 
-This project turns an Excel-based attendance tracker into an interactive Power BI dashboard that shows overall attendance performance and patterns by employee, date, and weekday.
-Using Power Query for cleaning/reshaping and DAX for KPI logic, the report provides a single place to monitor Presence, Work From Home, and Sick Leave rates, spot trends over time, and quickly identify outliers (e.g., low presence or rising SL).
+---
 
-Business Problem
+# Business Problem
+Attendance data stored in Excel (often split across multiple sheets/months) is difficult to analyze consistently and takes time to review manually. The main questions are:
+- What is the overall **Presence %** for a selected period?
+- How do **WFH %** and **SL %** change over time?
+- Are there any clear **weekday patterns** (e.g., lower presence on specific days)?
+- Which employees are significantly above/below the overall average?
 
-Attendance data stored in Excel (often across multiple sheets/months) is difficult to analyze consistently. Manually checking rows makes it hard to answer questions like:
+A Power BI dashboard is needed to standardize KPIs and make these insights easy to access.
 
-What is the overall Presence % for a selected period?
+---
 
-Is WFH increasing over time?
+# Methodology
+1. **Data Source (Excel)**
+   - Imported an Excel workbook containing attendance records.
+   - Core fields used: **Sheet Name/Period**, **Employee Code**, **Name**, **Date**, **Value** (e.g., `P`, `WFH`, `SL`, `WO`, `HO`, etc.).
 
-Are there weekday patterns (e.g., lower presence on certain days)?
+2. **Data Preparation (Power Query)**
+   - Combined/appended sheets into a single dataset (**Final Data**).
+   - Removed unnecessary columns and ensured correct data types (especially **Date** and **Text**).
+   - Standardized the attendance **Value** field for consistent reporting.
 
-Which employees differ significantly from the team average?
+3. **Measures (DAX)**
+   - Created measures to calculate:
+     - **Presence %**
+     - **WFH %**
+     - **SL %**
+     - **Total Working Days** (excluding non-working values such as `WO`/`HO`, if applicable)
 
-The business need is a clear dashboard that standardizes KPI definitions and makes attendance insights fast and reliable.
+4. **Dashboard (Power BI Visuals)**
+   - KPI cards for Presence/WFH/SL
+   - Trend charts by date for Presence, WFH, and SL
+   - Day-of-week breakdown tables
+   - Employee comparison table and daily status matrix
 
-Methodology
+---
 
-Data Source (Excel)
+# Skills
+- **Power BI**: dashboard building, slicers/filters, data visualization, reporting
+- **Power Query (M)**: ETL, combining sheets, cleaning, transforming, data typing
+- **DAX**: measures, filtering logic, KPI calculations, working day definitions
+- **Analytical thinking**: trend analysis, identifying patterns/outliers
 
-Used an Excel workbook containing attendance records (multiple sheets such as monthly tabs).
+---
 
-Key fields: Sheet Name / Period, Employee Code, Name, Date, Value (examples: P, WFH, SL, WO, HO, etc.).
+# Results & Business Recommendation
+**Results**
+- Delivered a “Presence Insights” dashboard that summarizes attendance into clear KPIs and trends:
+  - Fast visibility into overall **Presence %**, **WFH %**, and **SL %**
+  - Trend tracking across time to detect changes early
+  - Weekday analysis to identify consistent attendance patterns
+  - Employee-level comparison to quickly spot outliers
 
-Power Query (ETL / Data Preparation)
+**Business Recommendation**
+- Review the dashboard weekly/monthly to detect:
+  - low presence or high SL cases that may need follow-up/support
+  - weekday patterns that affect staffing and planning
+- Standardize attendance code definitions (`P`, `WFH`, `SL`, `WO`, `HO`, etc.) to improve reporting consistency.
+- If WFH trends upward, use the report to monitor impact and adjust hybrid-work policies accordingly.
 
-Imported the Excel file into Power BI.
+---
 
-Combined/appended sheets into one table (final “Final Data” dataset).
+# Next Steps
+1. Add a dedicated **Date table** and time intelligence (MoM change, rolling averages, MTD/QTD/YTD).
+2. Add **department/team/manager** fields (if available) for deeper slicing.
+3. Create an **outlier flag** (e.g., Presence < X% or SL > Y%) for automated monitoring.
+4. Add data quality checks (unexpected codes, missing values, duplicates).
+5. If used operationally, move the Excel file to **OneDrive/SharePoint** and enable scheduled refresh.
 
-Cleaned columns (kept only required fields) and set correct data types (especially Date and Text).
-
-Standardized the “Value” field so it can be used consistently in measures.
-
-DAX Measures (KPI Logic)
-
-Built measures to calculate:
-
-Presence %
-
-WFH %
-
-SL %
-
-Working day logic (excluding non-working statuses like WO/HO if applicable)
-
-Report & Visuals
-
-KPI cards for quick snapshot (Presence/WFH/SL).
-
-Trend charts by date for Presence, WFH, and SL.
-
-Day-of-week breakdown tables to compare weekday patterns.
-
-Employee table and a daily status matrix to drill into details.
-
-Skills
-
-Power BI: report design, slicers/filters, interactive visuals
-
-Power Query (M): importing Excel, cleaning, appending queries, data typing
-
-DAX: measures for counts/percentages, filtering attendance codes, working-day calculations
-
-Data analysis & storytelling: trends, outliers, operational insights
-
-Results & Business Recommendation
-
-Results
-
-Delivered a “Presence Insights” dashboard that summarizes attendance into clear KPIs and trends:
-
-Presence %, WFH %, and SL % at a glance
-
-Trend visibility across months/days to detect changes early
-
-Weekday comparisons to see consistent patterns
-
-Employee-level comparison to spot outliers quickly
-
-Business Recommendations
-
-Use the dashboard monthly to identify:
-
-employees/teams with low presence or high SL for follow-up/support
-
-days of the week with consistently lower presence to plan staffing and important meetings
-
-Standardize attendance code usage (e.g., clear definitions for WFH, SL, WO, HO) to improve reporting accuracy.
-
-If WFH is rising, define target ranges and monitor whether it impacts productivity or staffing needs.
-
-Next Steps
-
-Add a dedicated Date table and time intelligence (MoM changes, rolling averages, MTD/QTD/YTD).
-
-Add department/team/manager fields (if available) for deeper filtering and accountability.
-
-Create an outlier flag (e.g., Presence < threshold or SL > threshold) to automate review.
-
-Add a small data quality check inside Power Query (unexpected codes, missing names, duplicates).
-
-If used in a team, store the Excel source in OneDrive/SharePoint and enable scheduled refresh.
+---
