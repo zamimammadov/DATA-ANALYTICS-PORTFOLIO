@@ -82,6 +82,12 @@ When data is stored in a database and used for reporting, incorrect values (nega
 
 ---
 
+Preview of Dahsboard
+
+<img width="1006" height="565" alt="Screenshot 2025-12-26 022705" src="https://github.com/user-attachments/assets/de14d28f-3e54-44ba-aac5-a74dd0104974" />
+
+---
+
 # Next Steps
 1. Add a clear “data rules” layer (how to treat returns, zero/negative amounts, currency conversions).
 2. Create additional KPIs:
