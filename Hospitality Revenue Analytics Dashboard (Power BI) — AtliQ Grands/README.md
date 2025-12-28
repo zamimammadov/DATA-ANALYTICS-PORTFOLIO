@@ -3,6 +3,12 @@
 ## Table of Contents
 - [Project Background](#project-background)
 - [Executive Summary](#executive-summary)
+  - [Revenue Trend and Category Mix](#revenue-trend-and-category-mix-business-vs-luxury)
+  - [RevPAR Drivers: Occupancy vs ADR](#revpar-drivers-occupancy-vs-adr-what-actually-moves-revpar)
+  - [Weekday vs Weekend Performance](#weekday-vs-weekend-performance-demand-pattern)
+  - [Platform Performance](#sales-by-platforms--channels-booking-platform-performance)
+  - [Property Performance](#property-performance-topbottom-hotels)
+  - [Booking Leakage](#booking-leakage-realisation--cancellations-and-dbrn--durn)
 - [Insights Deep-Dive](#insights-deep-dive)
 - [Recommendations](#recommendations)
 - [Assumptions and Caveats](#assumptions-and-caveats)
