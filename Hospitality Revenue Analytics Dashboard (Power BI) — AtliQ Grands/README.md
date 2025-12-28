@@ -6,7 +6,7 @@
   - [Revenue Trend and Category Mix](#revenue-trend-and-category-mix-business-vs-luxury)
   - [RevPAR Drivers: Occupancy vs ADR](#revpar-drivers-occupancy-vs-adr-what-actually-moves-revpar)
   - [Weekday vs Weekend Performance](#weekday-vs-weekend-performance-demand-pattern)
-  - [Booking Leakage: Realisation % (Luxury vs Business)](#booking-leakage-realisation)
+  - [Booking Leakage: Realisation %](#booking-leakage-realisation--Luxury-vs-business)
   - [Platform Performance](#sales-by-platforms--channels-booking-platform-performance)
   - [Property Performance](#property-performance-topbottom-hotels)
 - [Insights Deep-Dive](#insights-deep-dive)
