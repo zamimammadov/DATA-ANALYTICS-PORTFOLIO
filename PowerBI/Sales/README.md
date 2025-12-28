@@ -121,5 +121,4 @@ Dashboard visuals:
 
 - `Sales_Project.pbix` → Power BI report  
 - `db_dump.sql` → MySQL database dump  
-- `assets/` → screenshots / images used in README  
 
