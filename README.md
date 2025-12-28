@@ -11,4 +11,6 @@ This is a repository to showcase skills, share projects and track my progress in
 - [Power BI](./PowerBI)
   - [HR Analytics](./PowerBI/HR%20Analytics)
   - [Sales Analytics](./PowerBI/Sales)
-- [Capstones](#Capstones)
+- [Capstones and Coursworks](./Capstones-and-Coursworks)
+  - [NextonNetflix](./Capstones-and-Coursworks/NextonNetflix)
+  - [Predicting-SpaceX-Falcon-9-First-Stage-Landing-Success](./Predicting-SpaceX-Falcon-9-First-Stage-Landing-Success)
