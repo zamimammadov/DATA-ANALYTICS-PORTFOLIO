@@ -11,7 +11,7 @@
   - [Hotel Performance Overview (Top and Bottom Hotels)](#property-performance-topbottom-hotels)
 - [Insights Deep-Dive](#insights-deep-dive)
 - [Recommendations](#recommendations)
-- [Assumptions and Caveats](#assumptions-and-caveats)
+- [Questions,Assumptions and Caveats](#assumptions-and-caveats)
 
 ## Project Background
 AtliQ Grands is a multi-city hotel chain. The Revenue team needs a clear way to monitor performance and take action on the right levers (pricing, occupancy, category mix, booking platforms, cancellations, and guest experience).
