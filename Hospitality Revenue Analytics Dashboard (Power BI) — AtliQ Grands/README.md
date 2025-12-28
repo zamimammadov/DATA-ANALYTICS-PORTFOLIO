@@ -162,3 +162,6 @@ This analysis reviews **AtliQ Grands’ performance in 2022 (Weeks W19–W31)** 
 - **Channel Comparisons:** Platform Realisation appears tightly clustered; meaningful differences may emerge only when segmented by **city/property/category/day type**, so platform decisions should be validated at those cuts.
 - **Uncaptured Drivers:** Local events, seasonality, competitor pricing, staffing disruptions, and renovations are not included in the dataset and can explain part of week-to-week variation.
 
+
+## Dashboard
+- Power BI file: [HotelProject.pbix](./HotelProject.pbix)
