@@ -25,7 +25,17 @@ This analysis reviews **AtliQ Grands’ performance in 2022 (Weeks W19–W32)** 
 - Implication: to lift total revenue, the highest leverage is to **protect Luxury performance** (availability, pricing, and experience), while using Business as a **stability lever** (weekday/corporate demand) to smooth volatility.
 <img width="572" height="475" alt="image" src="https://github.com/user-attachments/assets/37e15671-daaa-48d5-bfd7-1f213e88dd94" />
 
-### Category Performance (Business vs Luxury)
+### 2) RevPAR Drivers: Occupancy vs ADR (What actually moves RevPAR)
+- The weekly trend chart shows **ADR remains relatively stable** throughout W19–W32, staying in a narrow band with only small week-to-week movement. This suggests pricing was not the main variable changing during the period.
+- In contrast, **Occupancy % fluctuates noticeably** across weeks, with visible dips and recoveries. These occupancy shifts align with the ups and downs seen in **RevPAR**.
+- **RevPAR closely tracks Occupancy**, meaning the main reason RevPAR rises or falls is how many room nights are actually utilized, not large changes in daily rate.
+- Business implication: during this period, the highest-leverage way to improve RevPAR is to **increase utilized room nights** (demand capture + reducing booking leakage), while keeping ADR stable.
+- Practical actions that fit this insight:
+  - reduce booking leakage (cancellations / no-shows) to convert DBRN into DURN,
+  - strengthen demand in weaker weeks (promotions, corporate/weekday push),
+  - optimize channel mix toward platforms that bring reliable, realized bookings.
+<img width="761" height="427" alt="image" src="https://github.com/user-attachments/assets/4f4b6008-9f63-4dfa-9fb7-fe15057e2a24" />
+
 ### Property Performance (Top/Bottom Hotels)
 ### Platform Performance (ADR & Realisation)
 ### Occupancy and Capacity Utilization (DSRN/DBRN/DURN)
