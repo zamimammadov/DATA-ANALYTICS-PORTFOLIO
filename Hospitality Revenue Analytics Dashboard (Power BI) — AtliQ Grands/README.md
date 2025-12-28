@@ -21,7 +21,6 @@ This analysis reviews **AtliQ Grands’ performance in 2022 (Weeks W19–W32)** 
 - For **2022 (W19–W32)**, AtliQ Grands generated **1.71bn** total revenue.
 - Revenue is driven mainly by the **Luxury** segment: **1.05bn (61.61%)**, while **Business** contributes **0.66bn (38.39%)**.
 - Across the weekly trend view, **Luxury consistently stays above Business**, meaning overall revenue movement is more sensitive to Luxury demand/pricing changes.
-- There is a **sharp revenue drop in W32** for both categories, which likely indicates a **partial week / missing data** rather than a true performance crash (should be validated in the raw data).
 - Implication: to lift total revenue, the highest leverage is to **protect Luxury performance** (availability, pricing, and experience), while using Business as a **stability lever** (weekday/corporate demand) to smooth volatility.
 <img width="572" height="475" alt="image" src="https://github.com/user-attachments/assets/37e15671-daaa-48d5-bfd7-1f213e88dd94" />
 
