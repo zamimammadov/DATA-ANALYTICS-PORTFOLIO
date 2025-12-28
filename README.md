@@ -4,6 +4,7 @@ This is a repository to showcase skills, share projects and track my progress in
 ## Table of Contents
 
 - [End to end](#End_to_end)
+  - [Hospitality Revenue Analytics Dashboard](./Hospitality%20Revenue%20Analytics%20Dashboard%20(Power%20BI)%20%E2%80%94%20AtliQ%20Grands)
 - [Python](#python)
 - [SQL](#sql)
 - [Excel / Google Sheets](#excel--google-sheets)
