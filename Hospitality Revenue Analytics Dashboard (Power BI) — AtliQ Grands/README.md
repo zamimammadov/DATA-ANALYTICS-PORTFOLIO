@@ -115,3 +115,51 @@ This analysis reviews **AtliQ Grands’ performance in 2022 (Weeks W19–W31)** 
 - **Target Low-Rated Properties for Operational Fixes:** Portfolio average rating is **3.62**, with some properties near ~**3.0**. Improve service and room readiness to reduce complaints and cancellations, protecting Realisation and future demand.
 - **Link Experience to Revenue Protection:** Monitor rating drops alongside cancellation spikes; treat these as early warning signals and respond with on-ground corrective actions.
 
+
+
+## Clarifying Questions, Assumptions, and Caveats
+
+### Questions for Stakeholders Prior to Project Advancement
+
+#### A) Decision Context (what the business will do with this)
+- What are the **target thresholds** for the key KPIs (RevPAR, Occupancy, ADR, Realisation %, Cancellation %)?  
+  Which KPI is the primary goal: **maximize RevPAR**, **increase occupancy**, or **protect ADR**?
+- What are the **constraints** on actions? (rate floors/ceilings, brand standards for Luxury, blackout dates, fixed corporate rates, capacity/renovations)
+
+#### B) Revenue Quality (gross vs realized vs net)
+- Should performance be evaluated on **gross booked revenue** or **realized revenue** (after cancellations/no-shows)?  
+  Which one does the leadership team use in weekly reviews?
+- Do we need to account for **net revenue** (after platform commissions/discounts)?  
+  If yes, do we have commission rates by platform/property/category?
+
+#### C) Booking Leakage Root Causes (beyond “Realisation %”)
+- What is the breakdown of leakage into **cancellations vs no-shows vs early check-outs**?  
+  Do we have **reason codes** (guest reason, price change, availability, service issues)?
+- Are there specific operational patterns linked to leakage (late check-in policy, deposit rules, overbooking rules, payment failures)?
+
+#### D) Channel / Platform Strategy (actionability)
+- Which platforms are **strategic priorities** (contracted volume, corporate partnerships), and which can we actively reduce/increase?
+- Are there platform-specific rules (free cancellation windows, pay-at-hotel vs prepaid) that could explain why Realisation clusters near ~70%?
+- Do we track platform-level **conversion funnel** (search → booking → check-in), or only booking outcomes?
+
+#### E) Capacity & Inventory Reality (DSRN / blocked rooms)
+- Does DSRN reflect **true sellable inventory** after accounting for out-of-order rooms, maintenance blocks, renovation holds, and owner stays?
+- Are there inventory allocation rules by category/room class (e.g., Luxury inventory protected, Business oversold/undersupplied)?
+
+#### F) Property Performance Diagnostics (why top vs bottom happens)
+- For low-occupancy properties with decent ADR, what are the known drivers: weaker location demand, bad reviews, distribution gaps, or operational capacity limits?
+- For properties with lower ratings, what are the recurring issues (cleanliness, check-in experience, room readiness, amenities)?  
+  Is there a service recovery program already in place?
+
+---
+
+### Assumptions and Caveats
+
+- **Time Window:** Analysis reflects **2022 W19–W31** only. Findings describe this period and may not generalize to other months without additional data.
+- **KPI Interpretation:** Realisation % is treated as a proxy for booking quality/leakage. If Realisation is defined differently by the business (status-based vs room-night-based), the leakage narrative may change.
+- **Cancellation Economics:** High cancellation % does not always mean “bad performance” if the hotel intentionally uses flexible policies for demand capture. Net impact depends on **re-selling cancelled inventory** and lead time.
+- **Net vs Gross Performance:** Insights are based on operational KPIs (RevPAR/ADR/Occupancy). If commission/discount costs are material, ranking properties/platforms by **net revenue** could change conclusions.
+- **Channel Comparisons:** Platform Realisation appears tightly clustered; meaningful differences may emerge only when segmented by **city/property/category/day type**, so platform decisions should be validated at those cuts.
+- **Ratings as Signal (not proof):** Ratings are used as an early warning indicator. Without controlling for missing ratings, platform bias, or stay-completion rules, the relationship to cancellations/revenue is directional, not causal.
+- **Uncaptured Drivers:** Local events, seasonality, competitor pricing, staffing disruptions, and renovations are not included in the dataset and can explain part of week-to-week variation.
+
