@@ -24,7 +24,7 @@ This analysis reviews **AtliQ Grands’ performance in 2022 (Weeks W19–W31)** 
 - Implication: to lift total revenue, the highest leverage is to **protect Luxury performance** (availability, pricing, and experience), while using Business as a **stability lever** (weekday/corporate demand) to smooth volatility.
 <img width="572" height="475" alt="image" src="https://github.com/user-attachments/assets/37e15671-daaa-48d5-bfd7-1f213e88dd94" />
 
-### 2) RevPAR Drivers: Occupancy vs ADR (What actually moves RevPAR)
+### RevPAR Drivers: Occupancy vs ADR (What actually moves RevPAR)
 - The weekly trend chart shows **ADR remains relatively stable** throughout W19–W31, staying in a narrow band with only small week-to-week movement. This suggests pricing was not the main variable changing during the period.
 - In contrast, **Occupancy % fluctuates noticeably** across weeks, with visible dips and recoveries. These occupancy shifts align with the ups and downs seen in **RevPAR**.
 - **RevPAR closely tracks Occupancy**, meaning the main reason RevPAR rises or falls is how many room nights are actually utilized, not large changes in daily rate.
@@ -35,7 +35,7 @@ This analysis reviews **AtliQ Grands’ performance in 2022 (Weeks W19–W31)** 
   - optimize channel mix toward platforms that bring reliable, realized bookings.
 <img width="675" height="387" alt="image" src="https://github.com/user-attachments/assets/18557f22-e4de-44a9-ac12-64b568a32184" />
 
-### 3) Weekday vs Weekend Performance (Demand Pattern)
+### Weekday vs Weekend Performance (Demand Pattern)
 - Performance is meaningfully stronger on weekends:
   - **Weekend:** RevPAR **7,971** | Occupancy **63%** | ADR **12,725** | Realisation **71%**
   - **Weekday:** RevPAR **7,101** | Occupancy **56%** | ADR **12,683** | Realisation **70%**
@@ -47,20 +47,19 @@ This analysis reviews **AtliQ Grands’ performance in 2022 (Weeks W19–W31)** 
 
 ---
 
-### 4) Booking Leakage: Realisation %, Cancellations, and DBRN → DURN
-- Portfolio Realisation is **70.15%**, but leakage is visible in room-night flow:
-  - **DSRN 2,528** (sellable) → **DBRN 1,461** (booked) → **DURN 1,025** (utilized)
-- That implies **436 booked room nights were not utilized** (**DBRN − DURN**), representing a direct loss of realized revenue without any capacity constraint.
-- Cancellations are a major contributor: portfolio **Cancellation % is 24.84%**, and most properties sit in a similar **~24–26%** range, making it a systemic issue rather than a single-hotel issue.
-- Property examples show the same pattern:
-  - Atliq Exotica (Mumbai): **DBRN 80 → DURN 56**
-  - Atliq Palace (Mumbai): **DBRN 69 → DURN 49**
-  - Atliq Palace (Delhi): **DBRN 78 → DURN 54**
-- Business implication: reducing leakage (cancellations/no-shows) is one of the highest ROI levers because it increases realized revenue **without needing additional demand**.
+### Booking Leakage: Realisation % (Luxury vs Business)
+- Realisation % stays **around ~0.69–0.71** across the selected weeks, meaning only ~70% of booked room nights translate into realized stays (a consistent leakage signal).
+- **Business and Luxury move differently week to week**, but neither category shows a sustained improvement trend; performance is mostly stable with short spikes/dips.
+- The sharpest dips appear around **W26 (Business)** and **late weeks for Luxury**, which indicates periods of weaker booking quality (more cancellations/no-shows or higher booking drop-off).
+- Because Realisation % is relatively flat, major revenue gains are more likely to come from **reducing cancellation/no-show leakage** (improving conversion from booked to utilized nights) rather than expecting Realisation to “naturally” improve over time.
+- Recommended follow-up: break Realisation % by **booking_platform** and **property** to identify where leakage is concentrated and apply targeted fixes (policies, overbooking strategy, confirmation flows, and channel mix).
+
+
+<img width="1004" height="500" alt="Screenshot 2025-12-29 005044" src="https://github.com/user-attachments/assets/e43d4c9b-3cb3-427d-ae6a-6eb1d22d0cc8" />
 
 ---
 
-### 5) Sales by Platforms & Channels (Booking Platform Performance)
+### Sales by Platforms & Channels (Booking Platform Performance)
 - Realisation % by platform is tightly clustered around ~70%:
   - logtrip **70.59%**, journey **70.52%**, direct online **70.27%**, direct offline **70.20%**, others **70.07%**, makeyourtrip **69.99%**, tripster **69.83%**
 - Since Realisation differences are small, platform strategy should be decided mainly by:
@@ -73,7 +72,7 @@ This analysis reviews **AtliQ Grands’ performance in 2022 (Weeks W19–W31)** 
 
 ---
 
-### 6) Property Performance (Top/Bottom Hotels)
+### Property Performance (Top/Bottom Hotels)
 - Top performers combine **high occupancy + premium ADR**, which produces strong RevPAR:
   - **Atliq Exotica (Mumbai): 117M** | RevPAR **10,629** | Occ **65.85%** | ADR **16,141**
   - **Atliq Palace (Mumbai): 100M** | RevPAR **10,592** | Occ **66.13%** | ADR **16,016**
