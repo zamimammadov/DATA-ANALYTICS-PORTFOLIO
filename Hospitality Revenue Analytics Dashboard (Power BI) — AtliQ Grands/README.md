@@ -160,6 +160,5 @@ This analysis reviews **AtliQ Grands’ performance in 2022 (Weeks W19–W31)** 
 - **Cancellation Economics:** High cancellation % does not always mean “bad performance” if the hotel intentionally uses flexible policies for demand capture. Net impact depends on **re-selling cancelled inventory** and lead time.
 - **Net vs Gross Performance:** Insights are based on operational KPIs (RevPAR/ADR/Occupancy). If commission/discount costs are material, ranking properties/platforms by **net revenue** could change conclusions.
 - **Channel Comparisons:** Platform Realisation appears tightly clustered; meaningful differences may emerge only when segmented by **city/property/category/day type**, so platform decisions should be validated at those cuts.
-- **Ratings as Signal (not proof):** Ratings are used as an early warning indicator. Without controlling for missing ratings, platform bias, or stay-completion rules, the relationship to cancellations/revenue is directional, not causal.
 - **Uncaptured Drivers:** Local events, seasonality, competitor pricing, staffing disruptions, and renovations are not included in the dataset and can explain part of week-to-week variation.
 
