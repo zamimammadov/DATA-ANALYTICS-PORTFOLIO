@@ -86,7 +86,4 @@ This dashboard provides a single, standardized view of attendance performance an
 1. Add a **Date table** and time intelligence (Month-over-Month, rolling averages, YTD).
 2. Add **department/team** fields (if available) for deeper analysis.
 3. Create an **outlier rule** (e.g., low Presence % or high SL %) for automatic monitoring.
-4. Add data quality checks (unknown codes, missing values, duplicates).
-5. Move Excel to **OneDrive/SharePoint** and enable scheduled refresh (if needed).
-
 ---
