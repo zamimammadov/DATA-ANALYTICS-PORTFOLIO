@@ -14,4 +14,4 @@ This is a repository to showcase skills, share projects and track my progress in
 - [Capstones and Coursworks](./Capstones%20and%20Coursworks)
   - [NextonNetflix](./Capstones%20and%20Coursworks/NextonNetflix)
   - [Predicting-SpaceX-Falcon-9-First-Stage-Landing-Success](./Capstones%20and%20Coursworks/Predicting-SpaceX-Falcon-9-First-Stage-Landing-Success)
-https://github.com/zamimammadov/DATA-ANALYTICS-POTFOLIO/tree/main/Capstones%20and%20Coursworks/NextonNetflix
+
