@@ -43,7 +43,7 @@ This analysis reviews **AtliQ Grands’ performance in 2022 (Weeks W19–W31)** 
 - Weekend demand creates a clear opportunity for **rate protection** (avoid unnecessary discounting on peak days).
 - Weekdays are the larger gap: improving weekday occupancy by strengthening Business/corporate demand can raise RevPAR while keeping ADR stable.
 - Practical implication: use weekday-specific packages and partnerships to reduce the weekday utilization gap without harming overall pricing.
-<img width="672" height="200" alt="image" src="https://github.com/user-attachments/assets/e19e159c-ff80-4e42-b643-d7392410991d" />
+<img width="722" height="540" alt="image" src="https://github.com/user-attachments/assets/6f251822-0729-47b6-8f5e-216e81fc8090" />
 
 ---
 
