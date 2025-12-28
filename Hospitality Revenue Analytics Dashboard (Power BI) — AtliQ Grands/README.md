@@ -37,9 +37,9 @@ This analysis reviews **AtliQ Grands’ performance in 2022 (Weeks W19–W31)** 
 
 ### 3) Weekday vs Weekend Performance (Demand Pattern)
 - Performance is meaningfully stronger on weekends:
-  - **Weekend:** RevPAR **7,971** | Occupancy **0.63** | ADR **12,725** | Realisation **0.71**
-  - **Weekday:** RevPAR **7,101** | Occupancy **0.56** | ADR **12,683** | Realisation **0.70**
-- The uplift is primarily driven by **higher occupancy** (0.63 vs 0.56); ADR is almost the same, meaning demand (not price) is the main difference.
+  - **Weekend:** RevPAR **7,971** | Occupancy **63%** | ADR **12,725** | Realisation **71%**
+  - **Weekday:** RevPAR **7,101** | Occupancy **56%** | ADR **12,683** | Realisation **70%**
+- The uplift is primarily driven by **higher occupancy** (63% vs 56%); ADR is almost the same, meaning demand (not price) is the main difference.
 - Weekend demand creates a clear opportunity for **rate protection** (avoid unnecessary discounting on peak days).
 - Weekdays are the larger gap: improving weekday occupancy by strengthening Business/corporate demand can raise RevPAR while keeping ADR stable.
 - Practical implication: use weekday-specific packages and partnerships to reduce the weekday utilization gap without harming overall pricing.
