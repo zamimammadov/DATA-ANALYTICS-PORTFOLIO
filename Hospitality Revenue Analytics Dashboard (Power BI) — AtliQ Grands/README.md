@@ -33,7 +33,7 @@ This analysis reviews **AtliQ Grands’ performance in 2022 (Weeks W19–W32)** 
   - reduce booking leakage (cancellations / no-shows) to convert DBRN into DURN,
   - strengthen demand in weaker weeks (promotions, corporate/weekday push),
   - optimize channel mix toward platforms that bring reliable, realized bookings.
-<img width="761" height="427" alt="image" src="https://github.com/user-attachments/assets/4f4b6008-9f63-4dfa-9fb7-fe15057e2a24" />
+<img width="675" height="387" alt="image" src="https://github.com/user-attachments/assets/18557f22-e4de-44a9-ac12-64b568a32184" />
 
 ### 3) Weekday vs Weekend Performance (Demand Pattern)
 - Performance is meaningfully stronger on weekends:
