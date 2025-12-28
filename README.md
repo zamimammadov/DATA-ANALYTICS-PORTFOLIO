@@ -11,6 +11,7 @@ This is a repository to showcase skills, share projects and track my progress in
 - [Power BI](./PowerBI)
   - [HR Analytics](./PowerBI/HR%20Analytics)
   - [Sales Analytics](./PowerBI/Sales)
-- [Capstones and Coursworks](./Capstones-and-Coursworks)
-  - [NextonNetflix](./Capstones-and-Coursworks/NextonNetflix)
-  - [Predicting-SpaceX-Falcon-9-First-Stage-Landing-Success](./Predicting-SpaceX-Falcon-9-First-Stage-Landing-Success)
+- [Capstones and Coursworks](./Capstones%20and%20Coursworks)
+  - [NextonNetflix](./Capstones%20and%20Coursworks/NextonNetflix)
+  - [Predicting-SpaceX-Falcon-9-First-Stage-Landing-Success](./Capstones%20and%20Coursworks/Predicting-SpaceX-Falcon-9-First-Stage-Landing-Success)
+https://github.com/zamimammadov/DATA-ANALYTICS-POTFOLIO/tree/main/Capstones%20and%20Coursworks/NextonNetflix
