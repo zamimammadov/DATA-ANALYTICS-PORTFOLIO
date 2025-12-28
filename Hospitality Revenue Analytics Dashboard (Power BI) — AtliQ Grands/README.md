@@ -36,7 +36,57 @@ This analysis reviews **AtliQ Grands’ performance in 2022 (Weeks W19–W32)** 
   - optimize channel mix toward platforms that bring reliable, realized bookings.
 <img width="761" height="427" alt="image" src="https://github.com/user-attachments/assets/4f4b6008-9f63-4dfa-9fb7-fe15057e2a24" />
 
-### Property Performance (Top/Bottom Hotels)
-### Platform Performance (ADR & Realisation)
-### Occupancy and Capacity Utilization (DSRN/DBRN/DURN)
-### Cancellations, Realisation, and Ratings (Risk Signals)
+### 3) Weekday vs Weekend Performance (Demand Pattern)
+- Performance is meaningfully stronger on weekends:
+  - **Weekend:** RevPAR **7,971** | Occupancy **0.63** | ADR **12,725** | Realisation **0.71**
+  - **Weekday:** RevPAR **7,101** | Occupancy **0.56** | ADR **12,683** | Realisation **0.70**
+- The uplift is primarily driven by **higher occupancy** (0.63 vs 0.56); ADR is almost the same, meaning demand (not price) is the main difference.
+- Weekend demand creates a clear opportunity for **rate protection** (avoid unnecessary discounting on peak days).
+- Weekdays are the larger gap: improving weekday occupancy by strengthening Business/corporate demand can raise RevPAR while keeping ADR stable.
+- Practical implication: use weekday-specific packages and partnerships to reduce the weekday utilization gap without harming overall pricing.
+<img width="672" height="200" alt="image" src="https://github.com/user-attachments/assets/e19e159c-ff80-4e42-b643-d7392410991d" />
+
+---
+
+### 4) Booking Leakage: Realisation %, Cancellations, and DBRN → DURN
+- Portfolio Realisation is **70.15%**, but leakage is visible in room-night flow:
+  - **DSRN 2,528** (sellable) → **DBRN 1,461** (booked) → **DURN 1,025** (utilized)
+- That implies **436 booked room nights were not utilized** (**DBRN − DURN**), representing a direct loss of realized revenue without any capacity constraint.
+- Cancellations are a major contributor: portfolio **Cancellation % is 24.84%**, and most properties sit in a similar **~24–26%** range, making it a systemic issue rather than a single-hotel issue.
+- Property examples show the same pattern:
+  - Atliq Exotica (Mumbai): **DBRN 80 → DURN 56**
+  - Atliq Palace (Mumbai): **DBRN 69 → DURN 49**
+  - Atliq Palace (Delhi): **DBRN 78 → DURN 54**
+- Business implication: reducing leakage (cancellations/no-shows) is one of the highest ROI levers because it increases realized revenue **without needing additional demand**.
+
+---
+
+### 5) Sales by Platforms & Channels (Booking Platform Performance)
+- Realisation % by platform is tightly clustered around ~70%:
+  - logtrip **70.59%**, journey **70.52%**, direct online **70.27%**, direct offline **70.20%**, others **70.07%**, makeyourtrip **69.99%**, tripster **69.83%**
+- Since Realisation differences are small, platform strategy should be decided mainly by:
+  - **volume contribution** (which platforms bring meaningful bookings),
+  - **ADR differences** (pricing power),
+  - and **cancellation behavior** (which platforms cause leakage).
+- Even small improvements in platform mix can materially impact RevPAR because RevPAR is sensitive to occupancy and realized bookings.
+- Practical implication: prioritize platforms that deliver reliable utilization and acceptable ADR, and review policies/flows for platforms associated with higher cancellations.
+<img width="871" height="486" alt="image" src="https://github.com/user-attachments/assets/54de1249-af7e-42c7-9caf-fdf87c144ec5" />
+
+---
+
+### 6) Property Performance (Top/Bottom Hotels)
+- Top performers combine **high occupancy + premium ADR**, which produces strong RevPAR:
+  - **Atliq Exotica (Mumbai): 117M** | RevPAR **10,629** | Occ **65.85%** | ADR **16,141**
+  - **Atliq Palace (Mumbai): 100M** | RevPAR **10,592** | Occ **66.13%** | ADR **16,016**
+- Delhi shows a clear pricing gap even at similar occupancy:
+  - **Atliq Palace (Delhi): 88M** with **66.25%** occupancy but **ADR 12,480**, leading to **RevPAR 8,269**. This suggests a pricing/rate positioning opportunity (if demand allows).
+- Some hotels have acceptable ADR but weaker occupancy (~53–54%), which limits RevPAR and points to demand capture issues:
+  - **Atliq City (Delhi):** Occ **53.07%** | ADR **14,629** | RevPAR **7,763**
+  - **Atliq Grands (Mumbai):** Occ **53.60%** | ADR **14,839** | RevPAR **7,953**
+- Ratings and cancellations provide risk signals on sustainability:
+  - Portfolio average rating is **3.62**, but some properties are near **~3.04–3.05**, which can hurt future demand and increase cancellations.
+- Business implication: property-level actions should differ by pattern:
+  - High ADR + low occupancy → demand/channel visibility issue
+  - High occupancy + low ADR → pricing optimization opportunity
+  - Low rating + high cancellations → operational/experience fix to protect realisation
+<img width="897" height="430" alt="Screenshot 2025-12-29 002040" src="https://github.com/user-attachments/assets/7bd86dae-cfc9-47d3-bb80-ef651252d2c1" />
