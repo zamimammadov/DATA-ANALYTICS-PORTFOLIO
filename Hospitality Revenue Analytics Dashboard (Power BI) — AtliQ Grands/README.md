@@ -88,3 +88,30 @@ This analysis reviews **AtliQ Grands’ performance in 2022 (Weeks W19–W31)** 
   - High occupancy + low ADR → pricing optimization opportunity
   - Low rating + high cancellations → operational/experience fix to protect realisation
 <img width="897" height="430" alt="Screenshot 2025-12-29 002040" src="https://github.com/user-attachments/assets/7bd86dae-cfc9-47d3-bb80-ef651252d2c1" />
+
+## Recommendations
+
+### 1) RevPAR Growth (Occupancy-First)
+- **Strengthen Weekday Demand:** Weekdays lag weekends on occupancy (**0.56 vs 0.63**) and RevPAR (**7,101 vs 7,971**). Run weekday-focused offers (corporate tie-ups, long-stay packages, midweek discounts with rate floors) to lift occupancy without damaging ADR.
+- **Protect Peak-Weekend Pricing:** ADR is similar on weekdays and weekends (~12.7K), yet weekends deliver higher RevPAR due to demand. Maintain rate discipline on peak days and avoid unnecessary discounting.
+
+### 2) Booking Leakage Reduction (Realisation, Cancellations, DBRN → DURN)
+- **Reduce Cancellation Leakage:** Portfolio cancellation rate is high (**24.84%**) and Realisation hovers around **~70%**. Tighten policies where needed (cutoff windows, partial prepayment for high-risk platforms), and improve confirmation flows (reminders, easy rescheduling).
+- **Convert Booked Nights into Utilized Nights:** The portfolio shows a large DBRN → DURN gap (**1,461 vs 1,025**). Focus on no-show prevention, overbooking rules (where safe), and proactive re-selling of canceled inventory.
+
+### 3) Category Strategy (Business vs Luxury)
+- **Double Down on Luxury as the Main Revenue Driver:** Luxury contributes **61.61% (1.05bn)** of revenue. Protect Luxury ADR and experience quality to preserve pricing power and reduce cancellations.
+- **Use Business to Stabilize Volatility:** Business contributes **38.39% (0.66bn)** and can be leveraged to fill weekdays through corporate contracts and bundled value-adds rather than deep rate cuts.
+
+### 4) Property Performance Improvements (Top/Bottom Hotel Actions)
+- **Replicate Playbooks from Top Properties:** Top Mumbai hotels combine ~**66% occupancy** with **~15–16K ADR**, producing RevPAR above **10K**. Document their winning mix (platform share, room mix, rate strategy) and apply it to similar properties.
+- **Fix Properties with Low Occupancy Despite Decent ADR:** Some hotels show solid ADR but ~**53–54% occupancy**, indicating demand capture/channel visibility issues. Prioritize platform mix changes, localized campaigns, and content improvements (photos, descriptions, offers).
+
+### 5) Platform Optimization (Channel Mix)
+- **Prioritize Reliable Platforms, Not Just High ADR:** Realisation by platform is tightly clustered (~**69.8–70.6%**), so platform decisions should be driven by booking volume and cancellation behavior. Shift share toward platforms that deliver higher utilized nights (DURN) and stable demand.
+- **Platform-Level Leakage Monitoring:** Track Cancellation % and Realisation % by booking platform weekly to quickly detect which channels are generating leakage.
+
+### 6) Guest Experience & Quality (Ratings Impact)
+- **Target Low-Rated Properties for Operational Fixes:** Portfolio average rating is **3.62**, with some properties near ~**3.0**. Improve service and room readiness to reduce complaints and cancellations, protecting Realisation and future demand.
+- **Link Experience to Revenue Protection:** Monitor rating drops alongside cancellation spikes; treat these as early warning signals and respond with on-ground corrective actions.
+
