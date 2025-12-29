@@ -17,7 +17,7 @@
 AtliQ Grands is a multi-city hotel chain. The Revenue team needs a clear way to monitor performance and take action on the right levers (pricing, occupancy, category mix, booking platforms, cancellations, and guest experience).
 
 ## Executive Summary
-This analysis reviews **AtliQ Grands’ performance in 2022 (Weeks W19–W31)** using a Power BI dashboard built on booking-level and room-night data. During this period, the portfolio generated **1.71bn** in revenue with **RevPAR 7.35K**, **ADR 12.70K**, **Occupancy 57.87%**, and **Realisation 70.15%**. Revenue is mainly driven by the **Luxury** segment (**61.61%, 1.05bn**) compared to **Business** (**38.39%, 0.66bn**), while weekends show stronger utilization than weekdays. A key risk is booking leakage through cancellations (**24.84% overall**) and uneven property performance, so improving platform mix (higher-realisation channels) and targeting low-rating/high-cancellation properties will help protect realized revenue and lift RevPAR.
+AtliQ Grands’ 2022 performance (Weeks 19–31) was analysed using a Power BI dashboard built from booking and room-night data. Total revenue reached **1.71bn**, with performance driven mostly by the **Luxury segment (~62%)**. Weekends perform better than weekdays, mainly because more rooms are filled, not because prices are higher. The biggest risk is lost revenue from cancellations and incomplete stays (only **~70%** of booked nights are realised), so improving booking quality (platform mix) and fixing low-rated, high-cancellation hotels would protect revenue and improve overall performance.
 
 <img width="856" height="526" alt="Screenshot 2025-12-28 231703" src="https://github.com/user-attachments/assets/c700b84d-e38b-45d6-a431-dee5ab072c30" />
 
