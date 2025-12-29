@@ -170,4 +170,4 @@ This analysis reviews **AtliQ Grands’ performance in 2022 (Weeks W19–W31)** 
 
 
 ## Dashboard
-- Power BI file: [HotelProject.pbix](./HotelProject.pbix)
+- [Power BI file](./HotelProject.pbix)
