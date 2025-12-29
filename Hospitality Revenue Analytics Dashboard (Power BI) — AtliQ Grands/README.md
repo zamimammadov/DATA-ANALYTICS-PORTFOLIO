@@ -169,6 +169,6 @@ AtliQ Grands’ 2022 performance (Weeks 19–31) was analysed using a Power BI d
 - **Uncaptured Drivers:** Local events, seasonality, competitor pricing, staffing disruptions, and renovations are not included in the dataset and can explain part of week-to-week variation.
 
 
-## Dashboard
+## Dashboard and Presentation
 - [Power BI file](./HotelProject.pbix)
 - [Project Presentation](./HotelProject.pbix)
