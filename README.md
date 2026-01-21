@@ -20,7 +20,7 @@ This is a repository to showcase skills, share projects and track my progress in
 
 ## Table of Contents
 
-### End-to-end
+### [End to end](#End_to_end)
 - **Hospitality Revenue Analytics Dashboard (AtliQ Grands)**
   - **Goal:** Track hotel revenue performance and identify the key levers for RevPAR growth (occupancy vs ADR), booking leakage (cancellations/realisation), platform mix, and property performance.
   - **Tech:** Power BI (Power Query, DAX).
