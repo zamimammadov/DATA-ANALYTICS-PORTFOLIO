@@ -64,13 +64,13 @@ This is a repository to showcase skills, share projects and track my progress in
 
 ### [Power BI](./PowerBI)
 
-#### [HR Analytics](./PowerBI/HR%20Analytics)
+### [HR Analytics](./PowerBI/HR%20Analytics)
 
   - **Goal:** Convert a multi-sheet Excel attendance tracker into standardized KPIs (Presence %, WFH %, Sick Leave %) and reveal trends, weekday patterns, and employee-level differences.
   - **Tech:** Power BI (Power Query, DAX), Excel.
   - **Output:** Interactive HR dashboard with KPI cards, trends, weekday breakdowns, and employee comparisons.
 
-#### [Sales Analytics](./PowerBI/Sales)
+### [Sales Analytics](./PowerBI/Sales)
 
   - **Goal:** Deliver reliable sales reporting (Revenue and Sales Quantity trends) and identify top/bottom markets, customers, and products while validating data quality.
   - **Tech:** MySQL (SQL), Power BI (data modeling, DAX).
