@@ -21,11 +21,12 @@ This is a repository to showcase skills, share projects and track my progress in
 ## Table of Contents
 
 ### [End to end](#End_to_end)
-- **Hospitality Revenue Analytics Dashboard (AtliQ Grands)**
+### [Hospitality Revenue Analytics Dashboard](./Hospitality%20Revenue%20Analytics%20Dashboard%20(Power%20BI)%20%E2%80%94%20AtliQ%20Grands)
+- **Hospitality Revenue Analytics**
   - **Goal:** Track hotel revenue performance and identify the key levers for RevPAR growth (occupancy vs ADR), booking leakage (cancellations/realisation), platform mix, and property performance.
   - **Tech:** Power BI (Power Query, DAX).
   - **Output:** Executive dashboard + insights and recommendations to improve occupancy, protect pricing, and reduce revenue leakage.
-
+### [Cricket Analysis](./CricketAnalysis) 
 - **Cricket Analysis**
   - **Goal:** Analyze cricket match/player performance to uncover patterns and summarize insights for decision-making.
   - **Tech:** Python (pandas, numpy, matplotlib), Jupyter Notebook.
@@ -61,29 +62,29 @@ This is a repository to showcase skills, share projects and track my progress in
 
 ---
 
-### Power BI
+### [Power BI](./PowerBI)
 
-#### HR Analytics
-- **Presence Insights Dashboard**
+#### [HR Analytics](./PowerBI/HR%20Analytics)
+
   - **Goal:** Convert a multi-sheet Excel attendance tracker into standardized KPIs (Presence %, WFH %, Sick Leave %) and reveal trends, weekday patterns, and employee-level differences.
   - **Tech:** Power BI (Power Query, DAX), Excel.
   - **Output:** Interactive HR dashboard with KPI cards, trends, weekday breakdowns, and employee comparisons.
 
-#### Sales Analytics
-- **Sales Insights Dashboard**
+#### [Sales Analytics](./PowerBI/Sales)
+
   - **Goal:** Deliver reliable sales reporting (Revenue and Sales Quantity trends) and identify top/bottom markets, customers, and products while validating data quality.
   - **Tech:** MySQL (SQL), Power BI (data modeling, DAX).
   - **Output:** Interactive sales dashboard + SQL-based data checks (invalid values, missing mappings) and recommendations.
 
 ---
 
-### Capstones and Courseworks
-- **NextOnNetflix (Coursework – OOP Python)**
+### [Capstones and Coursworks](./Capstones%20and%20Coursworks)
+### [NextonNetflix](./Capstones%20and%20Coursworks/NextonNetflix)
   - **Goal:** Build a lightweight movie web app that recommends similar movies and classifies user review sentiment (Good/Bad).
   - **Tech:** Python, Flask, scikit-learn (CountVectorizer + cosine similarity, Multinomial Naive Bayes), Bootstrap, TMDB API.
   - **Output:** Flask web app with search/autocomplete, recommendations, cast info, and sentiment classification (+ tests and reproducible notebooks).
 
-- **SpaceX Falcon 9 First Stage Landing Prediction (IBM Capstone)**
+### [Predicting-SpaceX-Falcon-9-First-Stage-Landing-Success](./Capstones%20and%20Coursworks/Predicting-SpaceX-Falcon-9-First-Stage-Landing-Success)
   - **Goal:** Predict Falcon 9 first-stage landing success using historical launch data and identify key factors that influence outcomes.
   - **Tech:** Python, SQL, pandas, scikit-learn, Folium, Plotly/Dash, BeautifulSoup/Requests.
   - **Output:** End-to-end notebooks (wrangling → EDA → modeling) + interactive dashboard and final report/presentation.
