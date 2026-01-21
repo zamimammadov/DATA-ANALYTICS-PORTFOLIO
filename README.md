@@ -22,12 +22,12 @@ This is a repository to showcase skills, share projects and track my progress in
 
 ### [End to end](#End_to_end)
 ### [Hospitality Revenue Analytics Dashboard](./Hospitality%20Revenue%20Analytics%20Dashboard%20(Power%20BI)%20%E2%80%94%20AtliQ%20Grands)
-- **Hospitality Revenue Analytics**
+
   - **Goal:** Track hotel revenue performance and identify the key levers for RevPAR growth (occupancy vs ADR), booking leakage (cancellations/realisation), platform mix, and property performance.
   - **Tech:** Power BI (Power Query, DAX).
   - **Output:** Executive dashboard + insights and recommendations to improve occupancy, protect pricing, and reduce revenue leakage.
 ### [Cricket Analysis](./CricketAnalysis) 
-- **Cricket Analysis**
+
   - **Goal:** Analyze cricket match/player performance to uncover patterns and summarize insights for decision-making.
   - **Tech:** Python (pandas, numpy, matplotlib), Jupyter Notebook.
   - **Output:** Cleaned dataset + analysis notebook with visual insights.
