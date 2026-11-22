@@ -1,0 +1,33 @@
+{% extends "home.html" %}
+{% block title %}{{ title }} · NextOnNetflix{% endblock %}
+{% block content %}
+<section class="film">
+  {% if details.poster_path %}<img class="poster" src="https://image.tmdb.org/t/p/w342{{ details.poster_path }}" alt="Poster for {{ title }}">{% endif %}
+  <div>
+    <h1>{{ title }}</h1>
+    <p>{{ film.genres }} · Directed by {{ film.director_name }}</p>
+    <p>Starring {{ film.actor_1_name }}, {{ film.actor_2_name }} and {{ film.actor_3_name }}</p>
+    {% if details.overview %}<p>{{ details.overview }}</p>{% endif %}
+    {% if details.release_date %}<p>Released {{ details.release_date }}{% if details.runtime %} · {{ details.runtime }} min{% endif %}{% if details.vote_count %} · TMDB {{ details.vote_average|round(1) }}/10 ({{ details.vote_count }} votes){% endif %}</p>{% endif %}
+    {% if tmdb_enabled and not details %}<p>Live movie details are unavailable for this title.</p>{% endif %}
+  </div>
+</section>
+<section>
+  <h2>Similar films</h2>
+  <ol class="related">{% for movie in related %}<li><a href="{{ url_for('recommend', title=movie) }}">{{ movie|title }}</a></li>{% endfor %}</ol>
+</section>
+{% if details and details.get('credits', {}).get('cast') %}
+<section><h2>Cast</h2><ul>{% for actor in details.credits.cast[:10] %}<li><a href="{{ url_for('cast_member', person_id=actor.id) }}">{{ actor.name }}</a> as {{ actor.character }}</li>{% endfor %}</ul></section>
+{% endif %}
+<section>
+  <h2>Review sentiment</h2>
+  <form action="{{ url_for('recommend') }}" method="post">
+    <input type="hidden" name="title" value="{{ film.movie_title }}">
+    <label for="review">Enter a short review in English</label>
+    <textarea id="review" name="review" maxlength="3000" rows="2" required>{{ user_review }}</textarea>
+    <button type="submit">Classify review</button>
+  </form>
+  {% for review,label in predictions %}<blockquote><strong>{{ label|capitalize }}</strong><p>{{ review|truncate(700) }}</p></blockquote>{% endfor %}
+</section>
+{% if details %}<footer>Film metadata provided by <a href="https://www.themoviedb.org/">TMDB</a>. This product uses the TMDB API but is not endorsed or certified by TMDB.</footer>{% endif %}
+{% endblock %}

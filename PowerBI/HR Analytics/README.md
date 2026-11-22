@@ -1,89 +1,42 @@
-# Title
-**Presence Insights Dashboard (Power BI)**  
-Attendance analytics dashboard to track **Presence %, WFH %, and Leave patterns** using an Excel attendance file.
+# Presence Insights
 
----
+An interactive Power BI report compares attendance and remote work from April through June 2022. Each published row covers one month and weekday across the workforce. The dataset has 15 rows and contains no person-level records.
 
-# Executive Summary
-This project transforms an Excel attendance tracker into an interactive Power BI dashboard called **Presence Insights**.  
-Using **Power Query** to combine and clean the data, and **DAX** to calculate KPIs, the dashboard helps quickly monitor:
-- **Presence %** (how often employees are present)
-- **WFH %** (work from home frequency)
-- **SL %** (sick leave rate)
+[Power BI project](Presence%20Insights.pbip) · [Source totals](attendance_summary.csv)
 
-It also highlights trends over time, weekday patterns, and employee-level differences, so HR or managers can make faster and clearer decisions.
+## What the report shows
 
----
+| Month | Recorded workdays | Present day equivalents | Presence rate | Remote share of presence | Sick leave rate |
+|---|---:|---:|---:|---:|---:|
+| April 2022 | 1,622 | 1,534 | 94.57% | 9.03% | 0.43% |
+| May 2022 | 1,726 | 1,567.5 | 90.82% | 11.10% | 1.68% |
+| June 2022 | 1,091 | 1,003.5 | 91.98% | 14.00% | 1.10% |
+| **All three months** | **4,439** | **4,105** | **92.48%** | **11.04%** | **1.08%** |
 
-# Business Problem
-When attendance is recorded in Excel with many different status codes (present, leave types, half-days, weekends, holidays), it becomes hard to:
-- calculate consistent KPIs across months
-- compare employees fairly
-- spot trends (e.g., rising sick leave)
-- understand weekday patterns (e.g., lower presence on Fridays)
+June has the highest remote share and the fewest recorded workdays. This describes the mix of recorded attendance. The summary contains no headcount or contracted-hours data to explain the difference in coverage.
 
-This dashboard provides a single, standardized view of attendance performance and leave distribution.
+## How the measures work
 
----
+- A recorded workday is one populated worker-date entry after excluding weekly offs (`WO`) and holidays (`HO`). Missing entries are excluded.
+- **Presence rate** divides present day equivalents by recorded workdays. An office or remote day counts as one. A half-day of leave contributes half a present day.
+- **Remote share of presence** divides remote day equivalents by present day equivalents. A half-day of remote work (`HWFH`) contributes half a remote day and one present day.
+- **Sick leave rate** divides sick day equivalents by recorded workdays, counting half-day sick leave as 0.5.
 
-# Methodology
-1. **Data Source (Excel)**
-   - Imported an Excel workbook containing attendance data (multiple sheets, e.g., monthly sheets).
-   - Main columns used: **Employee Code**, **Name**, **Date**, **Value** (attendance status code).
+The overall percentages use summed numerators and denominators. For example, the 453 remote day equivalents account for 11.04% of the 4,105 present day equivalents.
 
-2. **Data Preparation (Power Query)**
-   - Appended all sheets into one clean table (**Final Data**).
-   - Kept only required columns and set correct data types.
-   - Ensured the attendance codes are consistent and ready for DAX calculations.
+## Open the dashboard
 
-3. **KPIs & Measures (DAX)**
-   - Built measures for:
-     - **Presence %**
-     - **WFH %**
-     - **SL %**
-     - **Total Working Days** (excludes `WO` and `HO`)
+Download this folder and keep the `.Report` and `.SemanticModel` directories next to **Presence Insights.pbip**. Open the project in a recent Power BI Desktop for Windows with PBIP/PBIR and TMDL support. Select **Home → Refresh** to load the embedded monthly summary. Use the month slicer to filter the four KPI cards, the presence trend and the weekday comparison. Selecting **2022-05** returns **1,726 recorded workdays**.
 
-4. **Dashboard (Power BI Visuals)**
-   - KPI cards (Presence %, WFH %, SL %)
-   - Trend charts by date (Presence/WFH/SL over time)
-   - Day-of-week tables (Presence/WFH/SL by weekday)
-   - Employee comparison table + daily status matrix
+To refresh from another aggregate CSV with the same header, enter its absolute path in **Transform data → Edit parameters → SummaryCsvPath**. Leaving the parameter blank selects the embedded example.
 
+## Rebuild the summary
 
+The sample was aggregated from the multi-sheet attendance workbook used in the original project. For a workbook you are authorised to use, the optional converter reads dated columns from monthly sheets, validates attendance codes and exports only the month/weekday counts shown above.
 
-# Skills
-- **Power BI**: dashboard design, slicers, reporting, visualization
-- **Power Query (M)**: data cleaning, combining sheets, transformations, data types
-- **DAX**: KPI measures, filtering by codes, working-day logic
-- **Data Analysis**: trend analysis, employee comparison, weekday insights
+```console
+python -m pip install openpyxl
+python summarize_attendance.py /path/to/attendance.xlsx /path/to/summary.csv
+```
 
----
-
-# Results & Business Recommendation
-**Results**
-- Created a dashboard that shows overall attendance performance and leave behavior:
-  - Clear KPI tracking for Presence, WFH, and Sick Leave
-  - Trends over time (to detect changes early)
-  - Weekday patterns (to support planning)
-  - Employee-level visibility (to identify outliers)
-
-**Business Recommendation**
-- Use the dashboard monthly to track leave trends and take action early (especially SL increases).
-- Standardize how attendance codes are entered in Excel to keep the KPIs accurate.
-- If WFH is increasing, use the trend + weekday view to adjust hybrid work planning.
-
----
-
-# Preview of Dashboard
-<img width="1146" height="762" alt="image" src="https://github.com/user-attachments/assets/d7e80a63-a5b4-4fda-897a-2318fc469786" />
-
-
-
----
-
-
-# Next Steps
-1. Add a **Date table** and time intelligence (Month-over-Month, rolling averages, YTD).
-2. Add **department/team** fields (if available) for deeper analysis.
-3. Create an **outlier rule** (e.g., low Presence % or high SL %) for automatic monitoring.
----
+The source workbook and individual-level report are excluded from the current project. Use the CSV to inspect or reproduce every published KPI without Power BI.

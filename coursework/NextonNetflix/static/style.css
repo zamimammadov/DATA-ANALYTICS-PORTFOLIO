@@ -1,0 +1,31 @@
+:root {
+  color-scheme: dark;
+  font-family: "Noto Sans JP", Arial, sans-serif;
+  color: #fafafa;
+  background: #171719;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(130deg, #101014eb, #101014fa), url("image.jpg") center / cover fixed;
+}
+main { max-width: 54rem; margin: auto; padding: 2.5rem 1.4rem 4rem; }
+header { padding-bottom: 1.5rem; border-bottom: 1px solid #51474b; }
+.brand { font-size: 2rem; font-weight: bold; color: #ff6571; text-decoration: none; }
+a { color: #ffacb1; text-underline-offset: .2rem; }
+form, section, footer { margin-top: 1.8rem; }
+label { display: block; margin: .5rem 0; font-weight: 600; }
+.search div { display: flex; gap: .5rem; }
+input, button, textarea { font: inherit; padding: .65rem .9rem; border-radius: .35rem; }
+input, textarea { width: 100%; background: #252428; color: white; border: 1px solid #8d8589; }
+button { border: 1px solid #e74855; background: #ae2332; color: white; cursor: pointer; }
+textarea { display: block; margin-bottom: .6rem; }
+.film { display: flex; gap: 1rem; align-items: flex-start; }
+.poster { width: min(28%, 10rem); height: auto; }
+h1 { font-size: 2rem; margin: 0 0 .5rem; }
+h2 { font-size: 1.35rem; }
+p, li { line-height: 1.55; }
+.related li { margin: .3rem 0; }
+blockquote { border-left: .2rem solid #a56c74; padding-left: 1rem; margin: 1rem 0; }
+footer { color: #bbb; font-size: .85rem; }

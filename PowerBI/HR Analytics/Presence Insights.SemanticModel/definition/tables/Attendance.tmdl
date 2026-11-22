@@ -1,0 +1,87 @@
+table Attendance
+	lineageTag: d97a75c2-a9b3-5b7a-a0ac-18bc9feba99c
+
+	column 'Month'
+		dataType: string
+		sourceColumn: month
+		summarizeBy: none
+
+	column 'Weekday number'
+		dataType: int64
+		sourceColumn: weekday_number
+		summarizeBy: none
+		isHidden
+
+	column 'Weekday'
+		dataType: string
+		sourceColumn: weekday
+		summarizeBy: none
+		sortByColumn: 'Weekday number'
+
+	column 'Recorded workdays'
+		dataType: int64
+		sourceColumn: recorded_workdays
+		summarizeBy: none
+
+	column 'Present days'
+		dataType: double
+		sourceColumn: present_days
+		summarizeBy: none
+
+	column 'Remote days'
+		dataType: double
+		sourceColumn: remote_days
+		summarizeBy: none
+
+	column 'Sick days'
+		dataType: double
+		sourceColumn: sick_days
+		summarizeBy: none
+
+	measure 'Working days' = SUM(Attendance[Recorded workdays])
+		formatString: #,0
+		lineageTag: a11373a8-4834-58a8-a0ff-c642ab2b2553
+
+	measure 'Presence rate' = DIVIDE(SUM(Attendance[Present days]), [Working days])
+		formatString: 0.0%
+		lineageTag: 91b4bebe-67d4-51a2-84df-fd84b44755fe
+
+	measure 'Remote share of presence' = DIVIDE(SUM(Attendance[Remote days]), SUM(Attendance[Present days]))
+		formatString: 0.0%
+		lineageTag: 7534d7dc-6bd3-5844-8c66-edd2c398cabb
+
+	measure 'Sick leave rate' = DIVIDE(SUM(Attendance[Sick days]), [Working days])
+		formatString: 0.0%
+		lineageTag: be4a759e-399b-5793-b19d-cfce45b6e23b
+
+	partition Attendance = m
+		mode: import
+		source =
+			let
+			    headers = {"month", "weekday_number", "weekday", "recorded_workdays", "present_days", "remote_days", "sick_days"},
+			    demo = #table(headers, {
+			    {"2022-04", "1", "Monday", "311", "301.5", "21.0", "0.5"},
+			    {"2022-04", "2", "Tuesday", "309", "296.5", "23.0", "1.5"},
+			    {"2022-04", "3", "Wednesday", "308", "291.0", "22.0", "1.0"},
+			    {"2022-04", "4", "Thursday", "308", "280.5", "28.5", "4.0"},
+			    {"2022-04", "5", "Friday", "386", "364.5", "44.0", "0.0"},
+			    {"2022-05", "1", "Monday", "394", "362.5", "33.5", "9.5"},
+			    {"2022-05", "2", "Tuesday", "395", "359.5", "31.0", "8.5"},
+			    {"2022-05", "3", "Wednesday", "312", "285.5", "28.0", "3.5"},
+			    {"2022-05", "4", "Thursday", "313", "287.5", "38.5", "3.0"},
+			    {"2022-05", "5", "Friday", "312", "272.5", "43.0", "4.5"},
+			    {"2022-06", "1", "Monday", "174", "158.0", "27.0", "4.0"},
+			    {"2022-06", "2", "Tuesday", "172", "163.0", "22.0", "0.5"},
+			    {"2022-06", "3", "Wednesday", "249", "231.0", "26.5", "3.5"},
+			    {"2022-06", "4", "Thursday", "251", "231.0", "34.5", "2.0"},
+			    {"2022-06", "5", "Friday", "245", "220.5", "30.5", "2.0"}
+			    }),
+			    source = if SummaryCsvPath = "" then demo else
+			        Table.PromoteHeaders(Csv.Document(File.Contents(SummaryCsvPath), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv])),
+			    typed = Table.TransformColumnTypes(Table.SelectColumns(source, headers), {
+			        {"month", type text}, {"weekday_number", Int64.Type}, {"weekday", type text},
+			        {"recorded_workdays", Int64.Type}, {"present_days", type number},
+			        {"remote_days", type number}, {"sick_days", type number}
+			    }, "en-US")
+			in
+			    typed

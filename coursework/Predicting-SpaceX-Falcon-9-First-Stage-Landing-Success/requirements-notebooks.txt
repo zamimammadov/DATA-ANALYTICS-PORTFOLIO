@@ -1,0 +1,8 @@
+-r requirements.txt
+jupyterlab>=4,<5
+ipykernel>=6,<8
+beautifulsoup4>=4.12,<5
+requests>=2.32,<3
+folium>=0.18,<0.22
+seaborn>=0.13,<0.14
+matplotlib>=3.8,<4

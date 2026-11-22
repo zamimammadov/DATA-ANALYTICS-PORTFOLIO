@@ -1,0 +1,9 @@
+{% extends "home.html" %}
+{% block content %}
+{% if person %}
+  <h1>{{ person.name }}</h1>
+  {% if person.profile_path %}<img class="poster" src="https://image.tmdb.org/t/p/w185{{ person.profile_path }}" alt="{{ person.name }}">{% endif %}
+  {% if person.birthday %}<p>Born {{ person.birthday }}{% if person.place_of_birth %} in {{ person.place_of_birth }}{% endif %}</p>{% endif %}
+  <p>{{ person.biography or 'No biography available.' }}</p>
+{% else %}<p>Cast details are unavailable.</p>{% endif %}
+{% endblock %}

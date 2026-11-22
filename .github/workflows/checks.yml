@@ -1,0 +1,56 @@
+name: Portfolio checks
+
+on: [push, pull_request, workflow_dispatch]
+
+permissions:
+  contents: read
+
+jobs:
+  analytics:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install analysis and app dependencies
+        run: |
+          python -m pip install -r CricketAnalysis/requirements.txt -r coursework/NextonNetflix/requirements.txt -r coursework/Predicting-SpaceX-Falcon-9-First-Stage-Landing-Success/requirements.txt
+      - name: Reconcile hotel metrics to bookings and capacity
+        working-directory: Hospitality Revenue Analytics Dashboard (Power BI) — AtliQ Grands
+        run: python check_metrics.py
+      - name: Verify offline attendance report source
+        working-directory: PowerBI/HR Analytics
+        run: python check_report.py
+      - name: Rebuild and compare cricket scorecards
+        working-directory: CricketAnalysis
+        run: |
+          python -m unittest discover -s tests -v
+          python scorecards.py --output "$RUNNER_TEMP/cricket-model"
+          diff -r data/model "$RUNNER_TEMP/cricket-model"
+      - name: Evaluate the Falcon 9 holdout
+        working-directory: coursework/Predicting-SpaceX-Falcon-9-First-Stage-Landing-Success
+        run: python evaluate.py
+      - name: Check the movie app offline
+        working-directory: coursework/NextonNetflix
+        run: python -m unittest discover -s tests -v
+
+  sales:
+    runs-on: ubuntu-24.04
+    services:
+      mysql:
+        image: mysql:8.0
+        env:
+          MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
+          MYSQL_ROOT_HOST: '%'
+        ports:
+          - 127.0.0.1:33061:3306
+        options: --health-cmd="mysqladmin ping --silent" --health-interval=5s --health-timeout=5s --health-retries=20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Import the exercise dump in the disposable database
+        working-directory: PowerBI/Sales
+        run: mysql --host=127.0.0.1 --port=33061 --user=root < db_dump.sql
+      - name: Run revenue reconciliations
+        working-directory: PowerBI/Sales
+        run: mysql --host=127.0.0.1 --port=33061 --user=root sales < sales_checks.sql

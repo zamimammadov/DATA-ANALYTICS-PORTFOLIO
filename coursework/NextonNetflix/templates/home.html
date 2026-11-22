@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}NextOnNetflix · Movie recommendations{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<main>
+  <header><a class="brand" href="{{ url_for('home') }}">NextOnNetflix</a></header>
+  <form class="search" action="{{ url_for('recommend') }}" method="get">
+    <label for="movie">Find films similar to</label>
+    <div><input id="movie" name="title" list="titles" placeholder="Try Avatar or The Matrix" value="{{ title or searched or '' }}" required>
+    <button type="submit">Search</button></div>
+    <datalist id="titles">{% for name in suggestions %}<option value="{{ name }}">{% endfor %}</datalist>
+  </form>
+  {% if missing %}<p role="alert">No exact match in the catalogue. Choose a title from the suggestions.</p>{% endif %}
+  {% block content %}{% endblock %}
+</main>
+</body>
+</html>

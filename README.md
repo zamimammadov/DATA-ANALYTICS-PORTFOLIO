@@ -1,63 +1,19 @@
-# DATA ANALYTICS PORTFOLIO
-Welcome to my Data Analyst Portfolio. I am a data analyst with a strong interest in transforming data into clear metrics and actionable insights to support better business decisions. I use SQL to extract and model data, Python for cleaning and analysis (segmentation, funnel/cohort tracking, trend checks, basic statistical testing), and Power BI/Tableau/Excel to build dashboards and reports that stakeholders can use immediately. Each project in this portfolio presents the business question, the approach, key findings, and recommendations—supported by reproducible queries, notebooks, and visuals.
-This is a repository to showcase skills, share projects and track my progress in Data Analytics / Data Science related topics.
-## Table of Contents
+# Data analytics portfolio
 
-- [End to end](#End_to_end)
-  - [Hospitality Revenue Analytics Dashboard](./Hospitality%20Revenue%20Analytics%20Dashboard%20(Power%20BI)%20%E2%80%94%20AtliQ%20Grands)
-  - [Cricket Analysis](./CricketAnalysis)
-- [Power BI](./PowerBI)
-  - [HR Analytics](./PowerBI/HR%20Analytics)
-  - [Sales Analytics](./PowerBI/Sales)
-- [Capstones and Coursworks](./Capstones%20and%20Coursworks)
-  - [NextonNetflix](./Capstones%20and%20Coursworks/NextonNetflix)
-  - [Predicting-SpaceX-Falcon-9-First-Stage-Landing-Success](./Capstones%20and%20Coursworks/Predicting-SpaceX-Falcon-9-First-Stage-Landing-Success)
-- [Python](#python)
-- [SQL](#sql)
-- [Excel / Google Sheets](#excel--google-sheets)
-- [Tableau](#tableau)
+Power BI reports, SQL reconciliations and Python analyses by Zamin Mammadov. Each project includes its data sources, metric definitions and instructions for inspecting or reproducing the results.
 
+## Hotel revenue and occupancy
 
----
+AtliQ Grands recorded **134,590 room bookings against 232,576 available check-in slots** in the supplied data, or **57.87% booked occupancy**. This measure includes bookings that were later cancelled. The report separates booking demand, realised revenue and cancellations so a reader can investigate the difference. [Report, presentation and metric checks](Hospitality%20Revenue%20Analytics%20Dashboard%20%28Power%20BI%29%20%E2%80%94%20AtliQ%20Grands/README.md)
 
-### End to end
-### [Hospitality Revenue Analytics Dashboard](./Hospitality%20Revenue%20Analytics%20Dashboard%20(Power%20BI)%20%E2%80%94%20AtliQ%20Grands)
+![AtliQ Grands dashboard showing revenue, occupancy and booking performance](Hospitality%20Revenue%20Analytics%20Dashboard%20%28Power%20BI%29%20%E2%80%94%20AtliQ%20Grands/preview/dashboard.png)
 
-  - **Goal:** Track hotel revenue performance and identify the key levers for RevPAR growth (occupancy vs ADR), booking leakage (cancellations/realisation), platform mix, and property performance.
-  - **Tech:** Power BI (Power Query, DAX).
-  - **Output:** Executive dashboard + insights and recommendations to improve occupancy, protect pricing, and reduce revenue leakage.
-### [Cricket Analysis](./CricketAnalysis) 
+## Explore the projects
 
-  - **Goal:** Analyze cricket match/player performance to uncover patterns and summarize insights for decision-making.
-  - **Tech:** Python (pandas, numpy, matplotlib), Jupyter Notebook.
-  - **Output:** Cleaned dataset + analysis notebook with visual insights.
-
----
-
-### Power BI
-
-### [HR Analytics](./PowerBI/HR%20Analytics)
-
-  - **Goal:** Convert a multi-sheet Excel attendance tracker into standardized KPIs (Presence %, WFH %, Sick Leave %) and reveal trends, weekday patterns, and employee-level differences.
-  - **Tech:** Power BI (Power Query, DAX), Excel.
-  - **Output:** Interactive HR dashboard with KPI cards, trends, weekday breakdowns, and employee comparisons.
-
-### [Sales Analytics](./PowerBI/Sales)
-
-  - **Goal:** Deliver reliable sales reporting (Revenue and Sales Quantity trends) and identify top/bottom markets, customers, and products while validating data quality.
-  - **Tech:** MySQL (SQL), Power BI (data modeling, DAX).
-  - **Output:** Interactive sales dashboard + SQL-based data checks (invalid values, missing mappings) and recommendations.
-
----
-
-### Capstones and Coursworks
-### [NextonNetflix](./Capstones%20and%20Coursworks/NextonNetflix)
-  - **Goal:** Build a lightweight movie web app that recommends similar movies and classifies user review sentiment (Good/Bad).
-  - **Tech:** Python, Flask, scikit-learn (CountVectorizer + cosine similarity, Multinomial Naive Bayes), Bootstrap, TMDB API.
-  - **Output:** Flask web app with search/autocomplete, recommendations, cast info, and sentiment classification (+ tests and reproducible notebooks).
-
-### [Predicting-SpaceX-Falcon-9-First-Stage-Landing-Success](./Capstones%20and%20Coursworks/Predicting-SpaceX-Falcon-9-First-Stage-Landing-Success)
-  - **Goal:** Predict Falcon 9 first-stage landing success using historical launch data and identify key factors that influence outcomes.
-  - **Tech:** Python, SQL, pandas, scikit-learn, Folium, Plotly/Dash, BeautifulSoup/Requests.
-  - **Output:** End-to-end notebooks (wrangling → EDA → modeling) + interactive dashboard and final report/presentation.
-
+| Project | Question | Tools |
+|---|---|---|
+| [Sales reconciliation](PowerBI/Sales/README.md) | Do the database transactions reproduce the Power BI revenue figures, and how does cleaning the currency codes change the answer? | MySQL, Power BI |
+| [Attendance patterns](PowerBI/HR%20Analytics/README.md) | How do presence, remote work and sick leave vary over time, and which days belong in each denominator? | Excel, Power BI |
+| [T20 World Cup scorecards](CricketAnalysis/README.md) | Who led the tournament in runs and wickets after matching player names and converting overs to legal balls? | Python, pandas |
+| [Falcon 9 landing prediction](coursework/Predicting-SpaceX-Falcon-9-First-Stage-Landing-Success/README.md) | How well do models trained on earlier launches predict later landings? | Python, scikit-learn, Dash, SQL |
+| [NextonNetflix](coursework/NextonNetflix/README.md) | Which films have similar cast, director and genre information, and how does a local classifier label reviews? | Python, Flask, scikit-learn |

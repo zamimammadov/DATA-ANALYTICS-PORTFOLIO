@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+.pytest_cache/
+.env
+.env.local
+desktop.ini
+.DS_Store
+.pbi/
+/CricketAnalysis/build/
